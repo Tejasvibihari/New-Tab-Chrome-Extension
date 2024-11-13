@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Bihari New Tab",
+  "short_name": "React App",
+  "version": "1.0.0",
+  "description": "A new tab extension that opens the Bihari New Tab React app.",
+  "icons": {
+    "48": "logo192.png",
+    "128": "logo192.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "48": "logo192.png"
+    }
+  },
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

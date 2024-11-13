@@ -1,0 +1,41 @@
+.clock {
+    height: 5vh;
+    color: #787878;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.clock::after {
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, black);
+}
+
+.clock>div {
+    display: flex;
+}
+
+.tick {
+    /* line-height: 17vh; */
+}
+
+.tick-hidden {
+    opacity: 0;
+}
+
+.move {
+    animation: move linear 1s infinite;
+}
+
+@keyframes move {
+    from {
+        transform: translateY(0vh);
+    }
+
+    to {
+        transform: translateY(-20vh);
+    }
+}
